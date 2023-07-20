@@ -1,0 +1,27 @@
+[
+  {
+    "key": "Home",
+    "url": "/",
+    "title": "Home"
+  },
+  {
+    "key": "Blog",
+    "url": "/blog/",
+    "title": "Blog"
+  },
+  {
+    "key": "Code",
+    "url": "https://github.com/kdormer",
+    "title": "Code"
+  },
+  {
+    "key": "Links",
+    "url": "/links/",
+    "title": "Links"
+  },
+  {
+    "key": "RSS",
+    "url": "/feed.xml",
+    "title": "RSS"
+  }
+]

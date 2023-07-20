@@ -1,0 +1,18 @@
+{
+  "title": "Kyle Dormer",
+  "url": "https://ked.wtf/",
+  "language": "en",
+  "description": "Magento 2 developer and student interested in bushcraft, philosophy, music and fitness. This is my personal website, opinions are my own.",
+  "feed": {
+    "subtitle": "Magento 2 developer and student interested in bushcraft, philosophy, music and fitness. This is my personal website, opinions are my own.",
+    "filename": "feed.xml",
+    "path": "/feed/feed.xml",
+    "id": "https://ked.wtf/"
+  },
+  
+  "author": {
+    "name": "Kyle Dormer",
+    "email": "kdormer@posteo.net",
+    "url": "https://ked.wtf/"
+  }
+}

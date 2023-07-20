@@ -1,0 +1,18 @@
+---
+layout: layouts/base.njk
+title: Blog
+ctitle: 📝 Blog 💡
+---
+{% for year, yearPosts in collections.postsByYear %}
+  <h2>{{ year }}</h2>
+  {% for post in yearPosts %}
+    <article>
+      <h3><a href="{{ post.url }}">{{ post.data.title }}</a></h3>
+      <p>
+        {{ post.data.description }}
+        <br>
+        <time datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
+      </p>
+    </article>
+  {% endfor %}
+{% endfor %}

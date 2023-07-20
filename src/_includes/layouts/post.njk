@@ -1,0 +1,14 @@
+---
+layout: layouts/base.njk
+date: 22-06-2022
+---
+{{ content | safe }}
+<hr>
+<aside>
+    <p>
+        If you liked this post (or didn't) feel free to email me at kdormer [at] posteo.net. My GPG public key can be obtained <a href="/files/kdormer.asc">here</a>.
+    </p>
+    <p>
+        <strong>Published: <time datetime="{{ date | htmlDateString }}">{{ page.date | readableDate}}</time></strong>
+    </p>
+</aside>

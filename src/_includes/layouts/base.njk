@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{{ description }}">
+    <meta name="author" content="{{ metadata.author.name }}">
+    <title>
+        {% if page.url == "/" %}
+            {{ title or metadata.title }}
+        {% else %}
+            {{ title or metadata.title }} | Kyle Dormer
+        {% endif %}
+    </title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏴󠁧󠁢󠁥󠁮󠁧󠁿</text></svg>">
+
+    {% set css %}
+        {% include "css/styles.css" %}
+        {% include "css/prism-vs.css" %}
+    {% endset %}
+    <style>
+        {{ css | cssmin | safe }}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>{{ ctitle or title }}</h1>
+        <nav>
+        {%- for site in nav %}
+            [<a href="{{ site.url | url }}" {% if site.url == page.url %} class="active"{%endif %}>{{ site.title }}</a>]
+            {# {% if loop.last %}
+            {% else %}
+                |
+            {% endif %} #}
+        {%- endfor %}
+        </nav>
+    </header>
+    <hr>
+    <main>
+        {{ content | safe }}
+    </main>
+    <footer>
+        <hr>
+        <span>© 2023 Kyle Dormer</span>
+        <br>
+        <small>All content licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a> unless otherwise stated.</small>
+    </footer>
+</body>
+</html>
