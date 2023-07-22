@@ -15,7 +15,7 @@ In the end I thankfully stumbled upon [Navidrome](https://www.navidrome.org/). N
 
 - is [free and open-source](https://github.com/navidrome/navidrome/)
 - is Lightweight enough to run on a Raspberry Pi
-- is Writen in Go
+- is written in Go
 - is compatible with any Subsonic client
 - can transcode music on the fly
 - has a built-in web interface
